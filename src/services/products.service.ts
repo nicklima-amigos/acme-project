@@ -2,7 +2,7 @@ import { Product } from '../entities/product.entity';
 import { NotImplementedError } from '../exceptions/not-implemented.error';
 
 export class ProductsService {
-  products: Product[];
+  constructor(private products: Product[]) {}
 
   createProduct(product: Product): Product {
     throw new NotImplementedError();
